@@ -10,8 +10,5 @@ When using **externalization in TikZ**, every figure must have a unique name to 
 - **Assigning sequential numbers** to any missing or unnamed `tikzsetname` entries.
 - **Providing detailed debug output** to track modifications.
 
-### **What’s the issue?**
-The script correctly assigns numbers to new TikZ figures but **fails to identify some pre-existing `tikzsetname` values**. This could result in **duplicate or incorrect numbering**.
-
-### **Next Steps**
-The script likely needs **a more robust detection mechanism** for `tikzsetname` within **ERT blocks**, ensuring it properly captures all pre-existing names before assigning new ones.
+### **Small issues**
+The script correctly assigns numbers to new TikZ figures but **fails to identify some pre-existing `tikzsetname` values**. This could result in **duplicate or incorrect numbering**. The script likely needs **a more robust detection mechanism** for `tikzsetname` within **ERT blocks**, ensuring it properly captures all pre-existing names before assigning new ones.
